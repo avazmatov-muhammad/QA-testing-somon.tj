@@ -28,13 +28,13 @@
 
 ## Environment
 
-- OS: Windows 10
-- Browser: Chrome
+- OS: Windows 11
+- Browser: Версия: 146.0.7680.165 (официальная сборка) 
 - Device: Desktop PC
 
-- OS: Android
-- Browser: Chrome
-- Device: Mobile
+- OS: Android 11 
+- Browser: Chrome 145.0.7632.75
+- Device: Mobile Redmi Note 11 Pro 4G
 
 ---
 
