@@ -25,8 +25,6 @@ Website: https://somon.tj
 
 ## 🧠 Tools used
 - Chrome DevTools
-- Jira style bug reporting
-- Google Sheets (test cases)
 - GitHub
 
 ---
