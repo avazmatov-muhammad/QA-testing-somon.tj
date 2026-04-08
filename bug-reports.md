@@ -59,8 +59,9 @@ Low
 ### Priority:
 Low
 
-
+### Screenshot:
+bug_report_images/bug_ui_price.png
 
 ### Environment:
 - OS: Windows 11
-- Browser: Chrome
+- Browser: Chrome Версия: 146.0.7680.178 (официальная сборка) (64 бит)
