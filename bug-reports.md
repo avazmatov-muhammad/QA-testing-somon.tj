@@ -222,7 +222,7 @@ Medium
 
 
 ### Screenshot:
-  
+bug_report_images/bug_ui_cards .jpg
 
 ### Environment:
 - Device: Redmi Note 11 Pro Global
