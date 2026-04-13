@@ -189,4 +189,44 @@ bug_report_video/performance bug 2.mp4
 - Internet: стабильный
 
 
+## BUG-UI-03
+
+Title: Изображения объявлений обрезаются некорректно в списке
+
+---
+
+### Steps to reproduce:
+1. Открыть мобильную версию сайта
+2. Перейти в список объявлений
+3. Посмотреть на изображения карточек
+
+---
+
+### Expected Result:
+Изображения должны отображаться корректно, без обрезания важного контента
+
+---
+
+### Actual Result:
+Изображения обрезаются, часть контента (текст/объект) не видна
+
+---
+
+### Severity:
+Medium
+
+### Priority:
+Medium
+
+---
+
+
+### Screenshot:
+  
+
+### Environment:
+- Device: Redmi Note 11 Pro Global
+- OS: Android 11
+- Browser: Chrome 145.0.7632.75
+- Internet: стабильный
 
