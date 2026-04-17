@@ -1,60 +1,139 @@
-# Test Cases — Somon.tj
-
-## TC-01 Login with valid data
-Steps:
-1. Open login page
-2. Enter valid email
-3. Enter valid password
-4. Click Login
-
-Expected: User is logged in
+# 🧪 TEST CASES — Somon.tj
 
 ---
 
-## TC-02 Login with invalid password
-Steps:
-1. Enter valid email
-2. Enter wrong password
-3. Click Login
+## TC-01 — Поиск с валидным запросом
 
-Expected: Error message
+**Preconditions:**
+Сайт открыт
 
----
+**Steps:**
+1. Ввести "телефон" в поле поиска
+2. Нажать кнопку поиска
 
-## TC-03 Search functionality
-Steps:
-1. Go to homepage
-2. Enter search keyword
-3. Click search
-
-Expected: Relevant results
+**Expected Result:**
+Отображаются объявления, содержащие "телефон"
 
 ---
 
-## TC-04 Create ad
-Steps:
-1. Login
-2. Click “Create Ad”
-3. Fill form
-4. Submit
+## TC-02 — Поиск с пустым полем
 
-Expected: Ad is created
+**Preconditions:**
+Сайт открыт
 
----
+**Steps:**
+1. Оставить поле поиска пустым
+2. Нажать кнопку поиска
 
-## TC-05 Empty fields validation
-Steps:
-1. Open form
-2. Leave fields empty
-3. Submit
-
-Expected: Validation error
+**Expected Result:**
+Отображаются все объявления или сообщение об ошибке
 
 ---
 
-## TC-06 Boundary Value (BVA)
-Input field limit 1–100 characters:
-- 0 → error
-- 1 → success
-- 100 → success
-- 101 → error
+## TC-03 — Фильтр по цене (валидный диапазон)
+
+**Preconditions:**
+Открыта страница объявлений
+
+**Steps:**
+1. Установить цену от 100 до 2000
+2. Применить фильтр
+
+**Expected Result:**
+Отображаются объявления в диапазоне 100–2000
+
+---
+
+## TC-04 — Фильтр с min > max
+
+**Preconditions:**
+Открыта страница объявлений
+
+**Steps:**
+1. Ввести min = 5000
+2. Ввести max = 1000
+3. Применить фильтр
+
+**Expected Result:**
+Отображается ошибка или фильтр не применяется
+
+---
+
+## TC-05 — Фильтр с граничными значениями (BVA)
+
+**Preconditions:**
+Открыта страница объявлений
+
+**Steps:**
+1. Установить цену от 0 до 0
+2. Применить фильтр
+
+**Expected Result:**
+Отображаются объявления с ценой 0 или пустой список
+
+---
+
+## TC-06 — Открытие объявления
+
+**Preconditions:**
+Есть список объявлений
+
+**Steps:**
+1. Нажать на любое объявление
+
+**Expected Result:**
+Открывается страница объявления с полной информацией
+
+---
+
+## TC-07 — Проверка кнопки "Позвонить"
+
+**Preconditions:**
+Открыта страница объявления
+
+**Steps:**
+1. Нажать кнопку "Позвонить"
+
+**Expected Result:**
+Отображается номер телефона или выполняется звонок
+
+---
+
+## TC-08 — Отображение изображений
+
+**Preconditions:**
+Открыта страница объявления
+
+**Steps:**
+1. Просмотреть изображения
+
+**Expected Result:**
+Изображения отображаются корректно, не обрезаются
+
+---
+
+## TC-09 — Негативный ввод (буквы в цену)
+
+**Preconditions:**
+Открыта страница фильтров
+
+**Steps:**
+1. Ввести "abc" в поле цены
+2. Применить фильтр
+
+**Expected Result:**
+Отображается ошибка или поле не принимает значение
+
+---
+
+## TC-10 — Производительность фильтра
+
+**Preconditions:**
+Открыта страница объявлений
+
+**Steps:**
+1. Установить фильтр
+2. Применить
+
+**Expected Result:**
+Результаты обновляются в течение 1–2 секунд
