@@ -245,8 +245,9 @@ Medium
 - OS: Android 11
 - Browser: Chrome 145.0.7632.75
 
-
 ---
+### Video:
+bug_report_video/Performance  UX  Navigation bug .mp4
 
 ### Type:
 Performance / UX / Navigation
