@@ -72,7 +72,6 @@ High
 - Device: Redmi note 11 pro global 
 - OS: Android 11
 - Browser: Chrome 145.0.7632.75
-- Internet: стабильный
 
 ---
 
@@ -115,6 +114,14 @@ Medium
 ### Priority:
 Medium
 
+---
+
+### Environment:
+- Device: Redmi Note 11 Pro Global
+- OS: Android 11
+- Browser: Chrome 145.0.7632.75
+
+---
 
 ## BUG-PERF-02
 
@@ -156,7 +163,7 @@ bug_report_video/performance bug 2.mp4
 - Device: Redmi Note 11 Pro Global
 - OS: Android 11
 - Browser: Chrome 145.0.7632.75
-- Internet: стабильный
+
 
 
 ## BUG-UI-03
@@ -198,5 +205,55 @@ bug_report_images/bug_ui_cards .jpg
 - Device: Redmi Note 11 Pro Global
 - OS: Android 11
 - Browser: Chrome 145.0.7632.75
-- Internet: стабильный
+
+
+
+
+## BUG-NAV-04
+
+Title: Задержка при возврате назад (swipe back) на мобильном устройстве
+
+---
+
+### Steps to reproduce:
+1. Открыть сайт somon.tj на мобильном устройстве
+2. Перейти в любое объявление
+3. Выполнить жест "свайп назад" (gesture back)
+
+---
+
+### Expected Result:
+Переход назад выполняется мгновенно, страница возвращается без задержки
+
+---
+
+### Actual Result:
+Переход назад происходит с заметной задержкой, требуется несколько секунд ожидания
+
+---
+
+### Severity:
+Medium
+
+### Priority:
+Medium
+
+---
+
+### Environment:
+- Device: Redmi Note 11 Pro Global
+- OS: Android 11
+- Browser: Chrome 145.0.7632.75
+
+
+---
+
+### Type:
+Performance / UX / Navigation
+
+---
+
+### Notes:
+Задержка ухудшает пользовательский опыт и может создавать ощущение зависания приложения
+
 
